@@ -1,4 +1,20 @@
-const HomepageHeading = ({ mobile }) => (
+import React from 'react';
+import {
+    Button,
+    Container,
+    Divider,
+    Grid,
+    Header,
+    Icon,
+    Image,
+    List,
+    Menu,
+    Segment,
+    Sidebar,
+    Visibility,
+  } from 'semantic-ui-react'
+
+const HeroSection = ({ mobile }) => (
     <Container text>
       <Header
         as='h1'
@@ -22,12 +38,11 @@ const HomepageHeading = ({ mobile }) => (
         }}
       />
       <Button primary size='huge'>
-        Get Started
-        <Icon name='right arrow' />
+        Just Click
       </Button>
     </Container>
   )
   
-  HomepageHeading.propTypes = {
+  HeroSection.propTypes = {
     mobile: PropTypes.bool,
   }
