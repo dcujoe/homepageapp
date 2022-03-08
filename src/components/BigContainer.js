@@ -14,6 +14,8 @@ import {
     Visibility,
   } from 'semantic-ui-react'
 
+import Homepage from '../constants/Homepage'
+
 
 function BigContainer() {
     state = {}
@@ -62,7 +64,7 @@ function BigContainer() {
                   </Menu.Item>
                 </Container>
               </Menu>
-              <HomepageHeading />
+              <Homepage />
             </Segment>
           </Visibility>
   
