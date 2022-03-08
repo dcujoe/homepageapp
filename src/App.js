@@ -30,9 +30,15 @@ function App() {
       <SmallContainer>{children}</SmallContainer>
     </MediaContextProvider>
     );
+
+    ReactDOM.render(
+      <React.StrictMode>
+         <App />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
   }
 
-
-
-
 export default App;
+
+
