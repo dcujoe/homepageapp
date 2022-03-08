@@ -15,15 +15,25 @@ import {
 } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 import Homepage from '../constants/Homepage'
+import { createMedia } from '@artsy/fresnel'
 
 
 
 function SmallContainer() {
-    state = {}
+    
   
-    handleSidebarHide = () => this.setState({ sidebarOpened: false })
+   const handleSidebarHide = () => this.setState({ sidebarOpened: false })
   
-    handleToggle = () => this.setState({ sidebarOpened: true })
+    const handleToggle = () => this.setState({ sidebarOpened: true })
+
+    const { MediaContextProvider, Media } = createMedia({
+      breakpoints: {
+        sm: 0,
+        md: 768,
+        lg: 1024,
+        xl: 1192,
+      },
+    })
   
    
       const { children } = this.props

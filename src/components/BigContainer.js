@@ -15,14 +15,24 @@ import {
   } from 'semantic-ui-react'
 
 import Homepage from '../constants/Homepage'
+import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types';
 
 
 function BigContainer() {
-    state = {}
+    
   
-    hideFixedMenu = () => this.setState({ fixed: false })
-    showFixedMenu = () => this.setState({ fixed: true })
+    const hideFixedMenu = () => this.setState({ fixed: false })
+   const showFixedMenu = () => this.setState({ fixed: true })
+
+    const { MediaContextProvider, Media } = createMedia({
+        breakpoints: {
+          sm: 0,
+          md: 768,
+          lg: 1024,
+          xl: 1192,
+        },
+      })
   
    
       const { children } = this.props
