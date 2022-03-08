@@ -13,6 +13,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import PropTypes from 'prop-types';
 import Homepage from '../constants/Homepage'
 
 

@@ -1,3 +1,5 @@
+import { createMedia } from '@artsy/fresnel'
+
 export const { MediaContextProvider, Media } = createMedia({
     breakpoints: {
       mobile: 0,
@@ -5,3 +7,6 @@ export const { MediaContextProvider, Media } = createMedia({
       computer: 1024,
     },
   })
+
+
+  

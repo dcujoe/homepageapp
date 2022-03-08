@@ -14,6 +14,7 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 
+
 const Homepage = () => (
     <ResponsiveContainer>
       <Segment style={{ padding: '8em 0em' }} vertical>

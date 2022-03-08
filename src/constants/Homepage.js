@@ -14,7 +14,7 @@ import {
     Visibility,
   } from 'semantic-ui-react'
 
-const HeroSection = ({ mobile }) => (
+const Homepage = ({ mobile }) => (
     <Container text>
       <Header
         as='h1'
@@ -43,6 +43,9 @@ const HeroSection = ({ mobile }) => (
     </Container>
   )
   
-  HeroSection.propTypes = {
+  Homepage.propTypes = {
     mobile: PropTypes.bool,
   }
+
+
+  export default Homepage;

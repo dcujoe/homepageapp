@@ -1,16 +1,28 @@
-import MediaContextProvider from './constants/createMedia'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createMedia } from '@artsy/fresnel'
 import BigContainer from './components/BigContainer'
 import SmallContainer from './components/SmallContainer'
 import './index.css'
 
 
 
-class MyApp extends App {
+function App() {
 
+  const { children } = this.props
+      const { fixed } = this.state
 
+  const { MediaContextProvider } = createMedia({
+    breakpoints: {
+      sm: 0,
+      md: 768,
+      lg: 1024,
+      xl: 1192,
+    },
+  })
 
   
-  render() {
+  
     
     return (
       <MediaContextProvider>
@@ -19,8 +31,8 @@ class MyApp extends App {
     </MediaContextProvider>
     );
   }
-}
 
 
 
-export default MyApp;
+
+export default App;
