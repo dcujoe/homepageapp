@@ -15,6 +15,7 @@ import {
   } from 'semantic-ui-react'
 
 import Homepage from '../constants/Homepage'
+import PropTypes from 'prop-types';
 
 
 function BigContainer() {
