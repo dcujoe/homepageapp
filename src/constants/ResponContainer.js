@@ -17,10 +17,10 @@ import {
 const FullContainer = ({ children }) => {
     return (
     
-    <MediaContextProvider>
-      <BigContainer>{children}</BigContainer>
-      <SmallContainer>{children}</SmallContainer>
-    </MediaContextProvider>
+        <MediaContextProvider>
+        <BigContainer>{children}</BigContainer>
+        <SmallContainer>{children}</SmallContainer>
+      </MediaContextProvider>
   )
 
     }

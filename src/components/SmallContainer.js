@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function containerMobile() {
+function SmallContainer() {
     state = {}
   
     handleSidebarHide = () => this.setState({ sidebarOpened: false })
@@ -67,6 +67,8 @@ function containerMobile() {
     }
   
   
-  MobileContainer.propTypes = {
+  SmallContainer.propTypes = {
     children: PropTypes.node,
   }
+
+export default SmallContainer;
