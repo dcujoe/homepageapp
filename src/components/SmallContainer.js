@@ -13,6 +13,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import Homepage from '../constants/Homepage'
 
 
 
@@ -70,7 +71,7 @@ function SmallContainer() {
                     </Menu.Item>
                   </Menu>
                 </Container>
-                <HomepageHeading mobile />
+                <Homepage mobile />
               </Segment>
   
               {children}
