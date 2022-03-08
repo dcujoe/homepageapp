@@ -1,9 +1,7 @@
-import App from "next/app";
 import MediaContextProvider from './constants/createMedia'
-import BigContainer from './BigContainer'
-import SmallContainer from './SmallContainer'
-
-import '../static/styles.css'
+import BigContainer from './components/BigContainer'
+import SmallContainer from './components/SmallContainer'
+import './index.css'
 
 
 
@@ -13,7 +11,7 @@ class MyApp extends App {
 
   
   render() {
-    const { Component, pageProps } = this.props;
+    
     return (
       <MediaContextProvider>
       <BigContainer>{children}</BigContainer>
