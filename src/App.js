@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { createMedia } from '@artsy/fresnel'
 import BigContainer from './components/BigContainer'
 import SmallContainer from './components/SmallContainer'
